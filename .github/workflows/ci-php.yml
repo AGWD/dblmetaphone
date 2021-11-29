@@ -38,7 +38,7 @@ jobs:
         run: vendor/bin/phpunit --configuration tests --coverage-clover coverage.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Setup test coverage environment
+      - name: generate coverage badge
         env:
           COVERAGE_BADGE_PATH: 'coverage_dblmetaphone.svg'
           REPO_TOKEN: ${{ secrets.BADGES_TOKEN }}
@@ -47,5 +47,4 @@ jobs:
           COMMIT_MESSAGE: updating badge
           COMMIT_NAME: github bot
           COMMIT_EMAIL: github-bot@adriangreen.com.au
-      - name: generate coverage badge
         run: composer badge
