@@ -1,0 +1,7 @@
+.idea
+composer.phar
+/vendor/
+*.iml
+tests/*/*/target/
+/tests/debug.php
+.phpunit.result.cache

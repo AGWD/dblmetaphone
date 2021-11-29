@@ -1,0 +1,1 @@
+java -jar reference-data-gen.jar -s 4,6,8 -i  ../../../src/main/words/words.txt -b ../../../../../words

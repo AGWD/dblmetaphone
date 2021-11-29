@@ -1,0 +1,41 @@
+{
+    "name": "adriangreen/phonetic",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "AdrianGreen\\Phonetic\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adrian Green",
+            "email": "git@adriangreen.com.au"
+        }
+    ],
+    "require": {
+        "adriangreen/string-buffer": "dev-master",
+        "adriangreen/phpunit-coverage-badge": "dev-master",
+        "symfony/polyfill-mbstring": "dev-main",
+        "ext-json": "*"
+    },
+    "suggest": {
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "scripts": {
+        "badge": "php ./tests/generate_badge.php",
+        "tests-with-clover-xdebug": "php -dxdebug.mode=coverage vendor/bin/phpunit --coverage-clover clover.xml tests"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/agwd/string-buffer.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "https://github.com/AGWD/phpunit-coverage-badge.git"
+        }
+    ]
+}
