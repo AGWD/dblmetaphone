@@ -42,13 +42,13 @@ jobs:
 
       - name: Test with phpunit
         run: vendor/bin/phpunit --configuration tests --coverage-clover coverage.xml
-      env:
-        COVERAGE_BADGE_PATH: 'coverage_dblmetaphone.svg'
-        REPO_TOKEN: ${{ secrets.BADGES_TOKEN }}
-        REPO: AGWD/badges
-        REPORT: coverage.xml
-        COMMIT_MESSAGE: updating badge
-        COMMIT_NAME: github bot
-        COMMIT_EMAIL: github-bot@adriangreen.com.au
+        env:
+          COVERAGE_BADGE_PATH: 'coverage_dblmetaphone.svg'
+          REPO_TOKEN: ${{ secrets.BADGES_TOKEN }}
+          REPO: AGWD/badges
+          REPORT: coverage.xml
+          COMMIT_MESSAGE: updating badge
+          COMMIT_NAME: github bot
+          COMMIT_EMAIL: github-bot@adriangreen.com.au
       - name: generate coverage badge
         run: composer badge
