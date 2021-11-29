@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         php-versions: ['8.0']
+
     steps:
 
       - name: Checkout
@@ -42,6 +43,9 @@ jobs:
 
       - name: Test with phpunit
         run: vendor/bin/phpunit --configuration tests --coverage-clover coverage.xml
+
+      - name: generate coverage badge
+        run: composer badge
         env:
           COVERAGE_BADGE_PATH: 'coverage_dblmetaphone.svg'
           REPO_TOKEN: ${{ secrets.BADGES_TOKEN }}
@@ -50,5 +54,3 @@ jobs:
           COMMIT_MESSAGE: updating badge
           COMMIT_NAME: github bot
           COMMIT_EMAIL: github-bot@adriangreen.com.au
-      - name: generate coverage badge
-        run: composer badge
