@@ -1,7 +1,7 @@
 
 # DoubleMetaphone
 
-![Coverage](https://raw.githubusercontent.com/AGWD/badges/master/coverage_dblmetaphone.svg)
+![Coverage](https://raw.githubusercontent.com/AGWD/badges/master/coverage_dblmetaphone.svg) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/AGWD/dblmetaphone)
 
 Encode a string into a phonetic one with the Double Metaphone algorithm.
 
