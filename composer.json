@@ -13,8 +13,7 @@
         }
     ],
     "require": {
-        "adriangreen/string-buffer": "dev-master",
-        "adriangreen/phpunit-coverage-badge": "dev-master",
+        "adriangreen/string-buffer": "^1.0.2",
         "symfony/polyfill-mbstring": "dev-main",
         "ext-json": "*"
     },
@@ -25,17 +24,12 @@
         "phpunit/phpunit": "^9"
     },
     "scripts": {
-        "badge": "php ./tests/generate_badge.php",
         "tests-with-clover-xdebug": "php -dxdebug.mode=coverage vendor/bin/phpunit --coverage-clover clover.xml tests"
     },
     "repositories": [
         {
             "type": "vcs",
             "url":  "https://github.com/agwd/string-buffer.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "https://github.com/AGWD/phpunit-coverage-badge.git"
         }
     ]
 }

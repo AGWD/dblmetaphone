@@ -4,63 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ead30ab2a12feddeef9e4b3ea7ef5103",
+    "content-hash": "a2961217b97b284eff36509d6a4af29a",
     "packages": [
         {
-            "name": "adriangreen/phpunit-coverage-badge",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/AGWD/phpunit-coverage-badge.git",
-                "reference": "f70596877a9708375d76a29e4a6c299e1c65ac87"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/AGWD/phpunit-coverage-badge/zipball/f70596877a9708375d76a29e4a6c299e1c65ac87",
-                "reference": "f70596877a9708375d76a29e4a6c299e1c65ac87",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-libxml": "*",
-                "ext-simplexml": "*",
-                "php": ">=7.4, ^8"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PhpUnitCoverageBadge\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adrian Green",
-                    "email": "git@adriangreen.com.au"
-                }
-            ],
-            "description": "Generates a code coverage badge from a phpunit coverage report and pushes to another repo for hosting",
-            "support": {
-                "source": "https://github.com/AGWD/phpunit-coverage-badge/tree/master",
-                "issues": "https://github.com/AGWD/phpunit-coverage-badge/issues"
-            },
-            "time": "2021-11-29T07:55:43+00:00"
-        },
-        {
             "name": "adriangreen/string-buffer",
-            "version": "dev-master",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AGWD/string-buffer.git",
-                "reference": "0b89a9e0813a5182d9371848f37f233027586cb3"
+                "reference": "e85f281fa9e4260495837f02706a30a2b7427373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AGWD/string-buffer/zipball/0b89a9e0813a5182d9371848f37f233027586cb3",
-                "reference": "0b89a9e0813a5182d9371848f37f233027586cb3",
+                "url": "https://api.github.com/repos/AGWD/string-buffer/zipball/e85f281fa9e4260495837f02706a30a2b7427373",
+                "reference": "e85f281fa9e4260495837f02706a30a2b7427373",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +28,6 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -82,6 +38,11 @@
                 "psr-4": {
                     "AdrianGreen\\String\\Test\\": "tests/"
                 }
+            },
+            "scripts": {
+                "tests-with-clover-xdebug": [
+                    "php -dxdebug.mode=coverage vendor/bin/phpunit "
+                ]
             },
             "license": [
                 "MIT"
@@ -106,7 +67,7 @@
                 "issues": "https://github.com/agwd/string-buffer/issues",
                 "source": "https://github.com/agwd/string-buffer"
             },
-            "time": "2021-11-24T02:38:55+00:00"
+            "time": "2021-11-30T00:11:15+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -2291,8 +2252,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "adriangreen/string-buffer": 20,
-        "adriangreen/phpunit-coverage-badge": 20,
         "symfony/polyfill-mbstring": 20
     },
     "prefer-stable": false,
